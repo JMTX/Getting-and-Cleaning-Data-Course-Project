@@ -6,7 +6,7 @@ This repository contains 3 files:
 - "run_analysis.R" : An R script file to build a smaller simplified tidy dataset from the original 
 					(Human Activity Recognition Using Smartphones Dataset version 1.0) dataset downloaded
 
-- "codebook.md" : a file to explain which variables contain the tidy dataset and how they were extacted from the original
+- "codebook.md" : a file to explain which variables contain the tidy dataset and how they were extracted from the original
 				(Human Activity Recognition Using Smartphones Dataset version 1.0) dataset downloaded
 
 
