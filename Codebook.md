@@ -54,7 +54,7 @@ The tidy datasets is composed of 180 reccords of 88 variables descibed here:
 The following variables from the 3rd to the 88th are mean and std values of features extracted, after a preprocessing, from accelerometer and gyroscope 3-axial signals tAcc-XYZ and tGyro-XYZ raw data.
 These features are normalized and bounded within [-1,1].
 
-To have a better understanding of what exactly represent these features, what preprocessing were applied to raw data before computing these features and others information. It is highly recommended to read the "features_info.txt" file from the original dataset
+To have a better understanding of what exactly represents these features, what preprocessing were applied to raw data before computing these features and others informations. It is highly recommended to read the "features_info.txt" file from the original dataset
 
  
 3- tBodyAcc-mean()-X
