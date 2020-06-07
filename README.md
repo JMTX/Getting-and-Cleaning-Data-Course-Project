@@ -67,30 +67,30 @@ To obtain this simplified tidy dataset from the original one , the  "run_analyze
 
 This script proceeds in 5 steps described here:
 
-1- Merges the training and the test sets to create one data set:
-   a) go the the training rep 'train/'
-   b) load the training data in a dataframe from the txt file 'X_train.txt'
-   c) load the label ID data in a dataframe from  the text file 'y_train.txt' and name the only column 'activity_label'
-   d) load the id of participant in a dataframe from the text file 'subject_train.txt' and name the only column 'participant_ID'
-   e) cbind the three dataframes in a train dataset 
-   a')b')c')d')e') do the same with the test data
-   f) merge the train and test datasets using rbind ( no need to use the merge function here)
+1- Merges the training and the test sets to create one data set:  
+   a) go the the training rep 'train/'  
+   b) load the training data in a dataframe from the txt file 'X_train.txt'  
+   c) load the label ID data in a dataframe from  the text file 'y_train.txt' and name the only column 'activity_label'  
+   d) load the id of participant in a dataframe from the text file 'subject_train.txt' and name the only column 'participant_ID'  
+   e) cbind the three dataframes in a train dataset  
+   a')b')c')d')e') do the same with the test data  
+   f) merge the train and test datasets using rbind ( no need to use the merge function here)  
 
 
-2- Extracts only the measurements on the mean and standard deviation for each measurement:
-   a) load the features names from the txt file 'features.txt' and use it to give a name to the feature columns (2:562) of the merged dataset
-   b) extract the column of the merged dataset with a name which contains "mean" or "std" and ofc keep the participant_id and activity_label columns. 
+2- Extracts only the measurements on the mean and standard deviation for each measurement:  
+   a) load the features names from the txt file 'features.txt' and use it to give a name to the feature columns (2:562) of the merged dataset  
+   b) extract the column of the merged dataset with a name which contains "mean" or "std" and ofc keep the participant_id and activity_label columns.   
    
    
-3- Uses descriptive activity names to name the activities in the data set
-   a) load the activity names in a dataframe from the txt file 'activity_labels.txt'
-   b) replace the label ID by their label name using mutate function
+3- Uses descriptive activity names to name the activities in the data set:  
+   a) load the activity names in a dataframe from the txt file 'activity_labels.txt'  
+   b) replace the label ID by their label name using mutate function  
    
 4- Appropriately labels the data set with descriptive variable names.
 
-5- From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-   a) group the dataset by activity and by subject
-   b) compute the mean of each variable (by activity, by subject) using summarize_all and mean functions
+5- From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject:  
+   a) group the dataset by activity and by subject  
+   b) compute the mean of each variable (by activity, by subject) using summarize_all and mean functions  
 
 Notes: in reality the step 4 is done in part during step 1 and before step 2
 
