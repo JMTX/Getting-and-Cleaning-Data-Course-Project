@@ -39,13 +39,13 @@ The simplified dataset description
 ==================================
 The tidy datasets is composed of 180 reccords of 88 variables descibed here:
 
-1- activity_label: factor which represents the name of the activity of the partcicipant during the reccord. It can take one of the 5 following values:
-				- WALKING
-				- WALKING_UPSTAIRS
-				- WALKING_DOWNSTAIRS
-				- SITTING
-				- STANDING
-				- LAYING
+1- activity_label: factor which represents the name of the activity of the partcicipant during the reccord. It can take one of the 5 following values:  
+				- WALKING  
+				- WALKING_UPSTAIRS  
+				- WALKING_DOWNSTAIRS  
+				- SITTING  
+				- STANDING  
+				- LAYING  
 
 2- participant_ID: integer which represent the ID of the participant. It can take a value between 1 and 30 (30 being the number of participants)
 
